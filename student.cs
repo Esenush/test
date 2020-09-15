@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace test
 {
@@ -19,7 +16,16 @@ namespace test
        public Contacts contacts;
        public int[] balls = new int[5];
        public double average;
-
+       public double Average();
+       {
+         int sum = 0;
+          for (int i=0: i<5; i++)
+          {
+             sum += balls[i];
+          }
+          average = sum /5;
+          return average; 
+       }
 
     }
 }
